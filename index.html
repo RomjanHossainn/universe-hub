@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uneverse Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .loading-spinner{
+            width: 30px ;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center mt-5">
+        <h2 class="text-3xl mb-2">Ai Universe Hub</h2>
+        <!-- <input type="text" name="" id="search" class="border outline-none py-1 px-2 w-1/4"> -->
+        <button id="showBtn" class="bg-green-700 text-white px-4 py-2 rounded-md">Show Data</button>
+        
+    </header>
+    <main class="max-w-screen-xl mx-auto px-10">
+        <section>
+            <div id ="root" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                <span id="loading" class="loading hidden loading-spinner text-primary absolute"></span>
+            </div>
+            <div id="showAll" class="text-center my-5 hidden">
+                <button class=" bg-green-600 text-white px-4 py-2 rounded-md" >Show All</button>
+            </div>
+            <div id="modal" class="w-full">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
